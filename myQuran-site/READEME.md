@@ -16,5 +16,5 @@ Thank you for checking out this project.
 Development in process.
 
 ## Author
-
+- Netlify - [https://myquranmo.netlify.app]
 - Email - [ogunneyeoyinkansola@gmail.com]
