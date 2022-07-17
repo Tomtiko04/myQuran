@@ -200,15 +200,13 @@ h2 {
 }
 
 @media (max-width:991px) {
-    .intro-section {
-        margin-top: 2em !important;
+.intro-section {
+        margin: 0 auto;
         width: 100%;
-        /*max-width: 800px !important;*/
     }
     .intro {
-        max-width: 800px !important;
+        width: 80% !important;
         margin: 0 auto !important;
-        text-align: center !important;
     }
     .intro p {
         width: 80% !important;
