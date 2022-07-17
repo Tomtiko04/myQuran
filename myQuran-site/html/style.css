@@ -1,7 +1,11 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');*/
+
 :root {
     --main-color: #19723D;
     --black: #000;
     --white: #fff;
+    --primary: #8A8E96;
+    --secondary: #1D1D35;
 }
 
 * {
@@ -9,8 +13,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
-    transition: .2s linear !important;
     overflow-x: hidden !important;
+    outline: none;
 }
 
 body {
@@ -23,6 +27,15 @@ nav {
     max-width: 1440px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    /*word-spacing: .2em;*/
+    color: var(--secondary);
+}
+
 .logo {
     color: var(--main-color);
     font-weight: 700;
@@ -30,6 +43,7 @@ nav {
     letter-spacing: -0.04em;
     user-select: none;
     display: block;
+    /* margin: 0 .7em 0 1.9em;*/
 }
 
 .logo span {
@@ -55,6 +69,10 @@ nav {
     color: var(--main-color) !important;
     font-weight: 600;
     transition: linear 2s;
+    -webkit-transition: linear 2s;
+    -moz-transition: linear 2s;
+    -ms-transition: linear 2s;
+    -o-transition: linear 2s;
 }
 
 .form {
@@ -86,20 +104,31 @@ nav {
 }
 
 .intro h1 {
-    color: #1D1D35;
+    color: var(--secondary);
     font-weight: 600;
     font-size: 3rem;
 }
 
 .intro p {
-    color: #8A8E96;
+    color: var(--primary);
     font-size: .9rem;
     font-weight: 500;
     width: 60%;
     line-height: 27px;
 }
 
+.btn-groups {
+    margin: 1.5em 0 1.5em 0;
+}
+
 .btn-1 {
+    background: #20A36B;
+    color: var(--white) !important;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.btn-1:hover {
     background: #20A36B;
     color: var(--white) !important;
     font-size: .8rem;
@@ -115,17 +144,71 @@ nav {
 }
 
 .Quran-img {
-    margin-right: 5em;
+    margin-right: 3em !important;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 5em 0;
+}
+
+.about-section h2 span {
+    font-size: .6em;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about-section p {
+    text-align: center;
+    line-height: 1.7;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.about-section .about-btn {
+    text-align: center;
+    margin: 2.2em 0 2em 0;
+}
+
+.about-section .about-btn button {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.Ayat-links a {
+    margin-right: 2.5em;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.Ayat-links a:hover {
+    border-bottom: 2px solid #19723D;
+}
+
+.searchh {
+    outline: none;
+    border-bottom: 1px solid #19723D;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    font-size: .9rem;
+    padding: .4em;
+    color: var(--primary);
+    font-weight: 500;
 }
 
 @media (max-width:991px) {
     .intro-section {
-        margin: 0 !important;
+        margin-top: 2em !important;
         width: 100%;
+        /*max-width: 800px !important;*/
     }
     .intro {
-        width: 80% !important;
+        max-width: 800px !important;
         margin: 0 auto !important;
+        text-align: center !important;
     }
     .intro p {
         width: 80% !important;
