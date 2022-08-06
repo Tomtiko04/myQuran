@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');*/
-
 :root {
     --main-color: #19723D;
     --black: #000;
@@ -13,27 +11,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
+    list-style-type: none !important;
     overflow-x: hidden !important;
-    outline: none;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-}
-
-nav {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1440px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.3rem;
-    font-weight: 600;
-    margin-bottom: 1em;
-    /*word-spacing: .2em;*/
-    color: var(--secondary);
 }
 
 .logo {
@@ -42,12 +25,13 @@ h2 {
     font-size: 1.7rem;
     letter-spacing: -0.04em;
     user-select: none;
-    display: block;
-    /* margin: 0 .7em 0 1.9em;*/
+}
+
+.logo:hover {
+    color: var(--main-color);
 }
 
 .logo span {
-    font-size: .6em;
     font-weight: 600;
     color: var(--black);
 }
@@ -59,35 +43,16 @@ h2 {
 .nav-item a {
     color: var(--black) !important;
     margin: 0 1em;
-    font-size: .9rem;
     letter-spacing: -0.02em;
+    font-weight: 400 !important;
 }
 
 .nav-item a:hover {
-    border-bottom: 2px solid var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
     padding-bottom: .5rem;
     color: var(--main-color) !important;
     font-weight: 600;
-    transition: linear 2s;
-    -webkit-transition: linear 2s;
-    -moz-transition: linear 2s;
-    -ms-transition: linear 2s;
-    -o-transition: linear 2s;
-}
-
-.form {
-    font-size: .4rem !important;
-    border: 1px solid var(--main-color) !important;
-}
-
-.form input {
-    font-size: .5rem !important;
-}
-
-.search-btn {
-    background: var(--main-color);
-    color: var(--white);
-    padding-inline: .5em !important;
+    transition: linear .2s;
 }
 
 .first-section {
@@ -95,62 +60,72 @@ h2 {
 }
 
 .intro-section {
-    margin: 4em 5em 4em 4.5em;
-    width: 100%;
+    margin-left: 1.5em;
 }
+
+
+/*BUG
 
 .intro {
     width: 80%;
-}
+}*/
 
 .intro h1 {
     color: var(--secondary);
     font-weight: 600;
     font-size: 3rem;
+    line-height: 1.2;
 }
 
 .intro p {
     color: var(--primary);
-    font-size: .9rem;
     font-weight: 500;
-    width: 60%;
+    width: 100%;
     line-height: 27px;
+    font-size: .9rem;
 }
 
-.btn-groups {
-    margin: 1.7em 0 2.2em 0;
+.Quran-img {
+    margin-right: 10em !important;
+    width: 100%;
 }
 
 .btn-1 {
     background: #20A36B;
-    color: var(--white) !important;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
 }
 
 .btn-1:hover {
     background: #20A36B;
-    color: var(--white) !important;
+    color: var(--white);
     font-size: .8rem;
     font-weight: 400;
 }
 
 .btn-2 {
-    background-color: transparent !important;
-    border: 1px solid var(--black) !important;
-    margin-left: 2.5em;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.btn-2:hover {
+    background: transparent;
+    color: var(--white) !important;
     font-size: .8rem;
     font-weight: 400;
 }
 
-.Quran-img {
-    margin-right: 3em !important;
+.about-img {
+    margin-top: -6em;
+    padding-top: 0;
+    margin-left: -3em;
 }
 
-.about-section {
-    display: flex;
-    justify-content: center;
-    margin: 5em 0 5em 0;
+.about-section h2,
+.surah-section h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--secondary);
 }
 
 .about-section h2 span {
@@ -160,11 +135,10 @@ h2 {
 }
 
 .about-section p {
-    text-align: center;
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--primary);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .about-section .about-btn {
@@ -177,6 +151,25 @@ h2 {
     color: var(--white);
 }
 
+.surah-section {
+    background-color: #F5F9FC;
+}
+
+.hidden {
+    display: none;
+}
+
+.search-section input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #19723D;
+    background-color: transparent;
+}
+
+.search-section input:focus {
+    outline: none;
+}
+
 .Ayat-links a {
     margin-right: 2.5em;
     color: var(--main-color);
@@ -187,33 +180,12 @@ h2 {
     border-bottom: 2px solid #19723D;
 }
 
-.searchh {
-    outline: none;
-    border-bottom: 1px solid #19723D;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    font-size: .9rem;
-    padding: .4em;
-    color: var(--primary);
-    font-weight: 500;
+.verses {
+    border: 1px solid #ccc;
 }
 
-@media (max-width:991px) {
-.intro-section {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .intro {
-        width: 80% !important;
-        margin: 0 auto !important;
-    }
-    .intro p {
-        width: 80% !important;
-        margin: 0 auto !important;
-    }
-    .me {
-        justify-content: center;
-        align-items: center;
-    }
+.number {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: .7em;
 }
